@@ -24,7 +24,7 @@
 	
 				<form class="search-form" action="https://echo.htmlacademy.ru/" method="get" role="search">
 					<label class="visually-hidden" for="search">Строка поиска.</label>
-					<input class="search-form-field" type="search" name="search" id="search" placeholder="Поиск: " required>
+					<input class="search-form-field" type="search" name="search" id="search" placeholder="Поиск по сайту" value="Поиск: " required>
 				</form>
 	
 				<!-- При переключении класса user-menu-active меняется вид меню -->
@@ -51,7 +51,8 @@
 				<nav class="navigation">
 					<ul class="navigation-list">
 						<li class="navigation-item">
-							<a class="navigation-link" href="#" aria-current="page">Главная</a>
+							<!-- Чтобы выделить активный пункт надо добавить к ссылке класс navigation-link-current -->
+							<a class="navigation-link navigation-link-current" href="#" aria-current="page">Главная</a>
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link" href="#">Компания</a>
@@ -337,10 +338,7 @@
 									<a class="product-button button-buy button" href="#" tabindex="-1">КУПИТЬ</a>
 									<a class="product-button button-favorite button" href="#" tabindex="-1">В закладки</a>
 								</div>
-	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-								</p>
+									
 								<a href="#" class="product-price">
 									<span class="visually-hidden">Новая цена</span>
 									15500 ₽
@@ -359,9 +357,6 @@
 									<a class="product-button button-favorite button" href="#" tabindex="-1">В закладки</a>
 								</div>
 	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-								</p>
 								<a href="#" class="product-price">
 									<span class="visually-hidden">Новая цена</span>
 									15500 ₽
@@ -379,10 +374,7 @@
 									<a class="product-button button-buy button" href="#" tabindex="-1">КУПИТЬ</a>
 									<a class="product-button button-favorite button" href="#" tabindex="-1">В закладки</a>
 								</div>
-	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-								</p>
+
 								<a href="#" class="product-price">
 									<span class="visually-hidden">Новая цена</span>
 									15500 ₽
@@ -467,9 +459,6 @@
 									<a class="product-button button-favorite button" href="#" tabindex="-1">В закладки</a>
 								</div>
 	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-								</p>
 								<a href="#" class="product-price">
 									<span class="visually-hidden">Новая цена</span>
 									15500 ₽
@@ -502,15 +491,15 @@
 				<h2 class="service-title title">Сервисы</h2>
 					<p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 					<ul class="service-list">
-						<li class="service-item">
+						<li class="service-item service-delivery">
 							<h3 class="service-caption">Доставка</h3>
 							<p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
 						</li>
-						<li class="service-item">
+						<li class="service-item service-guarantee">
 							<h3 class="service-caption">Гарантия</h3>
 							<p class="service-description">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
 						</li>
-						<li class="service-item">
+						<li class="service-item service-credit">
 							<h3 class="service-caption">кредит</h3>
 							<p class="service-description">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. Все&nbsp;как в банке, только проще!</p>
 						</li>
@@ -575,7 +564,7 @@
 	
 					<form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
 						<p class="subscription-text">Получайте лучшие предложения</p>					
-						<input class="subscription-email" type="email" name="subscription-email" id="subscription-email" placeholder="email@example.com">
+						<input class="subscription-email" type="email" name="subscription-email" id="subscription-email" placeholder="email@example.com" required>
 						<button class="subscription-button button" type="submit">
 							<span class="visually-hidden">Подписаться</span>
 						</button>
