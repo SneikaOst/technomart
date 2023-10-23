@@ -27,17 +27,59 @@
 					<input class="search-form-field" type="search" name="search" id="search" placeholder="Поиск по сайту" value="Поиск: " required>
 				</form>
 	
-				<!-- При переключении класса user-menu-active меняется вид меню -->
+				<!-- При переключении класса user-menu-active для user-menu-list - меняется вид меню -->
 	
 				<ul class="user-menu-list user-menu-login user-menu-active">
 					<li class="user-menu-item">
 						<a class="user-menu-link user-auth" href="#">Войти</a>
+						
+						<div class="user-auth-popover sign-in">
+							<div class="sign-in-content">
+								<h2 class="sign-in-title">Личный кабинет</h2>
+
+								<button class="popover-close-button" type="button">
+									<span class="visually-hidden">Закрыть</span>
+								</button>
+								
+								<form class="sign-in-form" action="https://echo.htmlacademy.ru/" method="post" id="sign-in">
+									<label class="visually-hidden" for="login">Логин.</label>
+									<input class="sign-in-form-field" type="text" name="login" id="login" placeholder="Логин">
+									<label class="visually-hidden" for="password">Пароль.</label>
+									<input class="sign-in-form-field password" type="password" name="password" id="password" placeholder="Пароль">
+									<div class="sign-in-text-wrapper">
+										<label class="control sign-in-control">
+											<input class="visually-hidden control-input" type="checkbox" name="remember" checked>
+											<span class="control-mark"></span>
+											<span class="control-label">Запомнить меня</span>
+										</label>										
+										<a class="recover-password-link" href="#">Забыл пароль</a>
+									</div>
+									<div class="sign-in-button-wrapper">
+										<button class="sign-in-button button" type="submit">войти</button>										
+										<a class="registration-button button" href="#">регистрация</a>
+									</div>
+								</form>
+							</div>
+						</div>
 					</li>
 				</ul>
 	
 				<ul class="user-menu-list user-menu-logout">
 					<li class="user-menu-item">
 						<a class="user-menu-link user-login" href="#">Равшан Джамшутович</a>
+
+						<div class="user-login-popover sign-in">
+							<div class="sign-in-content">
+								<h2 class="sign-in-title">Здравствуйте, <br> Равшан Джамшутович</h2>
+
+								<button class="popover-close-button" type="button">
+									<span class="visually-hidden">Закрыть</span>
+								</button>
+								<a class="sign-in-link" href="#" >мои заказы</a>
+								<a class="sign-in-link" href="#">личный кабинет</a>
+								<a class="logout-button button" href="#">выйти</a>
+							</div>
+						</div>
 					</li>
 					<li class="user-menu-item">
 						<a class="user-menu-link user-auth" href="#">
@@ -558,7 +600,7 @@
 				</div>
 	
 				<div class="footer-wrapper">
-					<p class="feedback">Обратная связь:
+					<p class="feedback">Обратная связь:<br>
 						<a class="feedback-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
 	
