@@ -6,7 +6,7 @@
 	<title>Интернет-магазин Техномарт</title>
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 </head>
 <body>
 	<div class="container">
@@ -38,7 +38,7 @@
 							<div class="sign-in-content">
 								<h2 class="sign-in-title">Личный кабинет</h2>
 								<button class="popover-close-button" type="button">
-									<span class="visually-hidden">Закрыть</span>
+									<span class="visually-hidden">Закрыть.</span>
 								</button>								
 								<form class="sign-in-form" action="https://echo.htmlacademy.ru/" method="post" id="sign-in">
 									<label class="visually-hidden" for="login">Логин.</label>
@@ -71,7 +71,7 @@
 							<div class="sign-in-content">
 								<h2 class="sign-in-title">Здравствуйте, <br>Равшан Джамшутович</h2>
 								<button class="popover-close-button" type="button">
-									<span class="visually-hidden">Закрыть</span>
+									<span class="visually-hidden">Закрыть.</span>
 								</button>
 								<a class="sign-in-link" href="#" >мои заказы</a>
 								<a class="sign-in-link" href="#">личный кабинет</a>
@@ -94,7 +94,7 @@
 
 							<!-- Чтобы выделить активный пункт надо добавить к ссылке класс navigation-link-current -->
 
-							<a class="navigation-link navigation-link-current" href="#" aria-current="page">Главная</a>
+							<a class="navigation-link" href="#" aria-current="page">Главная</a>
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link" href="#">Компания</a>
@@ -121,13 +121,13 @@
 					<ul class="navigation-list user-navigation">
 						<li class="navigation-item">
 							<a class="navigation-link user-favorite" href="#">
-								<span class="visually-hidden">Избранное</span>
+								<span class="visually-hidden">Избранное.</span>
 								<span class="user-favorite-count counter">12</span>
 							</a>
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link user-cart" href="#">
-								<span class="visually-hidden">Корзина</span>
+								<span class="visually-hidden">Корзина.</span>
 								<span class="user-cart-count counter">3</span>
 							</a>
 						</li>
@@ -142,7 +142,7 @@
 		<main class="main">		
 			<h1 class="visually-hidden">Интернет-магазин стройматериалов и инструментов для ремонта.</h1>
 			<section class="promo">
-				<h2 class="visually-hidden">Промоблок</h2>
+				<h2 class="visually-hidden">Промоблок.</h2>
 				
 				<ul class="promo-list">
 					<li class="promo-item promo-item-new promo-item-material">
@@ -237,11 +237,11 @@
 								<div class="range-wrapper-inputs">
 									<label class="filter-label">
 										<input class="range-input min-price" type="number" value="0" name="min-price">
-										<span class="visually-hidden">от</span>
+										<span class="visually-hidden">Изменить минимальную цену.</span>
 									</label>
 									<label class="filter-label">
 										<input class="range-input max-price" type="number" value="30000" name="max-price">
-										<span class="visually-hidden">до</span>
+										<span class="visually-hidden">Изменить максимальную цену.</span>
 									</label>
 								</div>
 							</fieldset>
@@ -332,15 +332,10 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-									22500 ₽
-								</p>
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
+								<span class="product-price-old">22500 ₽</span>
+								<a href="#" class="product-price">15500 ₽
 								</a>
 							</li>
 
@@ -353,16 +348,10 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-									22500 ₽
-								</p>
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<span class="product-price-old">22500 ₽</span>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card product-card-new">
@@ -374,12 +363,9 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>									
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card product-card-new">
@@ -391,12 +377,9 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card product-card-new">
@@ -408,12 +391,9 @@
 								</a>
 									<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card product-card-new">
@@ -425,16 +405,10 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-									22500 ₽
-								</p>
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<span class="product-price-old">22500 ₽</span>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card product-card-new">
@@ -446,16 +420,10 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-									22500 ₽
-								</p>
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<span class="product-price-old">22500 ₽</span>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card">
@@ -467,16 +435,10 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<p class="product-price-old">
-									<span class="visually-hidden">Старая цена</span>
-									22500 ₽
-								</p>
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<span class="product-price-old">22500 ₽</span>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 
 							<li class="product-card product-card-new">
@@ -488,12 +450,9 @@
 								</a>	
 								<div class="product-detail-wrapper">
 									<a class="product-button button-buy button" href="#">КУПИТЬ</a>
-									<a class="product-button button-favorite button" href="#">В закладки</a>
+									<button class="product-button button-favorite button" type="button">В закладки</button>
 								</div>	
-								<a href="#" class="product-price">
-									<span class="visually-hidden">Новая цена</span>
-									15500 ₽
-								</a>
+								<a href="#" class="product-price">15500 ₽</a>
 							</li>
 						</ul>
 
@@ -597,7 +556,7 @@
 						<p class="subscription-text">Получайте лучшие предложения</p>					
 						<input class="subscription-email" type="email" name="subscription-email" id="subscription-email" placeholder="email@example.com" required>
 						<button class="subscription-button button" type="submit">
-							<span class="visually-hidden">Подписаться</span>
+							<span class="visually-hidden">Подписаться.</span>
 						</button>
 					</form>
 				</div>
